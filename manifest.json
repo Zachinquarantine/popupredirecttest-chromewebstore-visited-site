@@ -1,0 +1,12 @@
+{
+  "name": "popupredirecttest.page visited",
+  "version": "1.0",
+  "description": "Informs you when you've visited the popupredirecttest.page site.",
+  "permissions": ["tabs", "*://*.popupredirecttest.page/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.popupredirecttest.page/*"],
+      "js": ["youvevisitedthesite.js"]
+    }
+  ]
+}
